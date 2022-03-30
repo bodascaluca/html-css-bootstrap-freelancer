@@ -22,10 +22,6 @@ html {
     color: white;
 }
 
-.ms_flex{
-    display: flex;
-}
-
 .ms_stars-pack{
     justify-content: center;
     align-items: center;
@@ -51,9 +47,7 @@ html {
     padding: 0 1rem;
 }
 
-.ms_uppercase{
-    text-transform: uppercase;
-}
+
 
 /* HEADER */
 header {
@@ -96,8 +90,51 @@ header {
 }
 /* Portfolio */
 .ms_portfolio-item {
-    background-color: blueviolet;
-    height: 200px;
+    /* background-color: blueviolet; */
+    /* height: 200px; */
+}
+
+.ms_portfolio-item img{
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+/* ABOUT  */
+.ms_button{
+    padding: 1.5rem 0;
+}
+
+/* FORM  */
+form .mb-3 .form-control{
+    border-top: 0;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+form .mb-3.ms_message .form-control{
+    border-bottom: 0;
+}
+
+
+form .btn{
+    background-color: var(--ms_primary-color);
+    border-color: var(--ms_primary-color);
+    color: #fff;
+}
+
+form .btn:hover{
+    background-color: white;
+    border-color: var(--ms_primary-color);
+    color: var(--ms_primary-color);
+    opacity: .6;
+}
+
+
+.ms_border-btn{
+    border: .1px solid #ced4da;
+    width: 100%;
+    margin-top: 3rem;
 }
 
 /* FOOTER */
@@ -106,12 +143,38 @@ footer {
     color: white;
 }
 
+    /* FOOTER-TOP  */
 .footer-top {
     background-color: var(--ms_secondary-color-light);
-    padding: 1rem 0;
+    padding: 3rem 0;
     text-align: center;
 }
 
+.ms_social{
+    justify-content: center;
+}
+
+.mn_mg-items{
+    margin: 0 1rem;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+
+p .ms_a{
+    color: inherit;
+    text-decoration: none;
+    color: var(--ms_primary-color);
+}
+
+a:hover .ms_a{
+   color: white;
+}
+
+/* FOOTER-BOTTOM  */
 .footer-bottom {
     background-color: var(--ms_secondary-color);
     padding: 1rem 0;

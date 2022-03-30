@@ -48,13 +48,13 @@
         <section class="ms_section ms_bg-primary ms_jumbotron">
           <div class="container">
               <img src="bootstrap_freelancer/img/avatar.svg" alt="">
-            <h1 class="ms_title ms_uppercase">start bootstrap</h1>
-            <div class="ms_stars-pack ms_flex">
+            <h1 class="text-uppercase">start bootstrap</h1>
+            <div class="ms_stars-pack d-flex">
                 <div class="ms_stars-border-white"></div>
                 <i class=" ms_star fas fa-star"></i>
                 <div class="ms_stars-border-white"></div>
             </div>
-            <p class="ms_uppercase">graphic artist - web designer - illustrator</p>
+            <p class="text-uppercase">graphic artist - web designer - illustrator</p>
           </div>
         </section>
   
@@ -63,7 +63,7 @@
           <div class="container">
             <div class="ms_title-wrapper">
               <h2>Portfolio</h2>
-              <div class="ms_stars-pack ms_flex">
+              <div class="ms_stars-pack d-flex">
                 <div class="ms_stars-border"></div>
                 <i class=" ms_star fas fa-star"></i>
                 <div class="ms_stars-border"></div>
@@ -71,22 +71,36 @@
             </div>
             <div class="row g-4">
               <div class="col-12 col-md-6 col-lg-4">
-                <div class="ms_portfolio-item"></div>
+                <div class="ms_portfolio-item">
+                    <img src="bootstrap_freelancer/img/cabin.png" class="img-fluid" alt="cabin">
+                </div>
               </div>
               <div class="col-12 col-md-6 col-lg-4">
-                <div class="ms_portfolio-item"></div>
+                <div class="ms_portfolio-item">
+                    <img src="bootstrap_freelancer/img/cake.png" class="img-fluid" alt="cake">
+
+                </div>
               </div>
               <div class="col-12 col-md-6 col-lg-4">
-                <div class="ms_portfolio-item"></div>
+                <div class="ms_portfolio-item">
+                    <img src="bootstrap_freelancer/img/circus.png" class="img-fluid" alt="circus">
+
+                </div>
               </div>
               <div class="col-12 col-md-6 col-lg-4">
-                <div class="ms_portfolio-item"></div>
+                <div class="ms_portfolio-item">
+                    <img src="bootstrap_freelancer/img/game.png" class="img-fluid" alt="game">
+                </div>
               </div>
               <div class="col-12 col-md-6 col-lg-4">
-                <div class="ms_portfolio-item"></div>
+                <div class="ms_portfolio-item">
+                    <img src="bootstrap_freelancer/img/safe.png" class="img-fluid" alt="safe">
+                </div>
               </div>
               <div class="col-12 col-md-6 col-lg-4">
-                <div class="ms_portfolio-item"></div>
+                <div class="ms_portfolio-item">
+                    <img src="bootstrap_freelancer/img/submarine.png" class="img-fluid" alt="subamrine">
+                </div>
               </div>
             </div>
           </div>
@@ -98,7 +112,11 @@
             <div class="container-fluid">
               <div class="ms_title-wrapper">
                 <h2>About</h2>
-                <div>- Stella -</div>
+                <div class="ms_stars-pack d-flex">
+                    <div class="ms_stars-border-white"></div>
+                    <i class=" ms_star fas fa-star"></i>
+                    <div class="ms_stars-border-white"></div>
+                </div>
               </div>
               <div class="row gy-4">
                 <div class="col-12 col-md-6">
@@ -114,6 +132,12 @@
                   velit dolor incidunt voluptate aut?
                 </div>
               </div>
+              <div class="ms_button text-center">
+                  <button type="button" class="btn btn-outline-light">
+                    <i class="fas fa-download"></i>
+                    Download
+                  </button>
+              </div>
             </div>
           </div>
         </section>
@@ -123,15 +147,39 @@
           <div class="ms_container-small">
             <div class="container-fluid">
               <div class="ms_title-wrapper">
-                <h2>About</h2>
-                <div>- Stella -</div>
+                <h2 class="text-uppercase">contact me</h2>
+                <div class="ms_stars-pack d-flex">
+                    <div class="ms_stars-border"></div>
+                    <i class=" ms_star fas fa-star"></i>
+                    <div class="ms_stars-border"></div>
+                </div>
               </div>
-              <div class="contact-form">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-                doloremque odio rerum corrupti fugiat earum veniam voluptate at
-                qui inventore. Dolorem, cupiditate aut. Velit repudiandae quos
-                sapiente quae quod amet!
-              </div>
+              <form>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"></label>
+                    <input placeholder="Nome" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text"></div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"></label>
+                  <input placeholder="Email address" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text"></div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"></label>
+                  <input placeholder="Phone number" type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"></label>
+                    <textarea placeholder="Messagge" class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                  </div>
+
+                <button type="submit" class="ms_btn btn btn-success">Send</button>
+              </form>
             </div>
           </div>
         </section>
@@ -143,9 +191,32 @@
         <div class="footer-top">
           <div class="container">
            <div class="row">
-               <div class="col-12 col-md-4">footer text</div>
-               <div class="col-12 col-md-4">footer text</div>
-               <div class="col-12 col-md-4">footer text</div>
+               <div class="col-12 col-md-4">
+                <h6 class="text-uppercase">location</h6>
+                <p class="">2215 John Daniel Drive Clark, MO 54243</p>
+                 </div>
+               <div class="col-12 col-md-4">
+                <h6 class="text-uppercase">around the web</h6>
+                 <div class="ms_social d-flex">
+                     <div>
+                         <i class="mn_mg-items fab fa-facebook-f"></i>
+                     </div>
+                     <div>
+                         <i class="mn_mg-items fab fa-google-plus-g"></i>
+                     </div>
+                     <div>
+                         <i class="mn_mg-items fab fa-twitter"></i>
+                     </div>
+                     <div>
+                         <i class="mn_mg-items fab fa-linkedin-in"></i>
+                     </div>
+                 </div>
+               </div>
+               
+               <div class="col-12 col-md-4">
+                    <h6 class="text-uppercase">about freelancer</h6>
+                    <p>Freelancer is a free to use, open source Bootstrap therme created by <span><a class="ms_a" href="">Start Bosstrap</a></span></p>
+               </div>
            </div>
           </div>
         </div>
