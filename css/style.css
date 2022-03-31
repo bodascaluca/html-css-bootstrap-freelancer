@@ -42,12 +42,9 @@ html {
     border-radius: 10px;
 }
 
-
 .ms_star{
     padding: 0 1rem;
 }
-
-
 
 /* HEADER */
 header {
@@ -58,12 +55,52 @@ header {
 }
 
 .ms_brand-wrapper {
-    background-color: lightcoral;
+
+}
+
+.ms_brand-wrapper h3{
+    line-height: 80px;
 }
 
 .ms_menu-wrapper {
-    background-color: blue;
+    /* background-color: blue; */
 }
+
+.menu-wrapper{
+    text-align: end;
+}
+
+.menu{
+    display: none;
+}
+
+.burgher{
+    font-size: 1.5rem;
+}
+
+.menu li{
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.menu a{
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) { 
+    .menu{
+        display: inline-block;
+    }
+
+    .burgher{
+        display: none;
+    }
+ }
+
+
+
 
 /* MAIN */
 .ms_section {
