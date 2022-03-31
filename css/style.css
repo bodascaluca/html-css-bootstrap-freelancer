@@ -89,6 +89,10 @@ header {
     cursor: pointer;
 }
 
+.menu a:hover{
+    color: var(--ms_primary-color);
+}
+
 @media (min-width: 768px) { 
     .menu{
         display: inline-block;
